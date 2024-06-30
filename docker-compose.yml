@@ -1,0 +1,10 @@
+services:
+  app:
+    image: xifowu/cine-tool:latest
+    restart: always
+    ports:
+      - 9021:9021
+      - 9022:9022
+    volumes:
+      - ./database/:/app/database
+      - ./config.yaml:/app/config.yaml
